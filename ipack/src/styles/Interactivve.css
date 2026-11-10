@@ -245,3 +245,33 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
+
+@media (max-width: 992px) {
+  .interactive-section {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .interactive-content {
+    max-width: 100%;
+  }
+
+  .interactive-content p {
+    margin: 0 auto 2rem auto; /* Center the paragraph */
+  }
+
+  /* Slightly shrink the phone so it fits on smaller screens */
+  .mock-phone {
+    width: 280px;
+    height: 570px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller phones */
+  .mock-phone {
+    width: 250px;
+    height: 500px;
+  }
+}

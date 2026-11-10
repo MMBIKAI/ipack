@@ -72,8 +72,21 @@
 
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 850px) {
   .card {
-    flex-direction: column; /* Stacks image on top of text */
+    flex-direction: column; /* Stack vertically */
+    max-width: 500px;
+  }
+
+  .card-image {
+    height: 300px; /* Fixed height for mobile image */
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .card-content {
+    padding: 2rem;
   }
 }

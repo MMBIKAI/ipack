@@ -32,3 +32,37 @@
   padding: 15px 40px;
   box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4); /* Gold glow */
 }
+
+@media (max-width: 768px) {
+  .hero {
+    /* Stack items vertically on mobile */
+    flex-direction: column;
+    min-height: auto; /* Remove the forced height */
+    padding: 0 0 2rem 0; /* Remove top padding */
+  }
+
+  .hero-bg {
+    /* Let the image display in its natural aspect ratio */
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Shows the whole image without cropping */
+    border-radius: 0 0 20px 20px; /* Optional: rounds the bottom corners */
+  }
+
+  .hero-overlay {
+    /* Change from absolute to relative so it sits BELOW the image */
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    margin-top: 2rem; /* Space between image and button */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-btn {
+    width: 85%; /* Make the button wide and easy to tap */
+    font-size: 1.1rem;
+  }
+}
